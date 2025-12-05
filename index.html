@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter(Clone)</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="src/fontandotherstyling.css">
+    <link rel="stylesheet" href="secondcss.css">
+</head>
+
+<body class="bg-black">
+    <div class="mainbox flex flex-row font-Montserrat">
+        <div class="first w-full bg-black text-black h-[100vh] sticky top-0 flex flex-row justify-end">
+            <div class="subbox h-screen w-[45%] bg-black relative ">
+                <div
+                    class="bg-black cursor-pointer transition duration-100 hover:bg-[#181919] active:bg-[#181919] w-[50px]   text-white h-[50px]  rounded-full  flex flex-row items-center justify-center mt-[10px]">
+                    <img src="svgs/logo.svg" class="mainlogo w-[35px]" alt="">
+                </div>
+                <div
+                    class="bg-black cursor-pointer transition duration-100 hover:bg-[#181919] active:bg-[#181919] text-white h-fit  w-fit pl-[8px]   pr-[20px] py-[10px] rounded-full flex flex-row items-center space-x-[10px]">
+                    <img src="svgs/home.svg" class="w-[25px]" alt="">
+                    <span class="navbarbuttontext font-[550] text-[14px]">Home</span>
+                </div>
+                <div
+                    class="bg-black cursor-pointer transition duration-100 hover:bg-[#181919] active:bg-[#181919] text-white h-fit  w-fit pl-[8px]   pr-[20px] py-[10px] rounded-full flex flex-row items-center space-x-[10px]">
+                    <img src="svgs/explore.svg" class="w-[25px]" alt="">
+                    <span class="navbarbuttontext font-[550] text-[14px]">Explore</span>
+                </div>
+                <div
+                    class="bg-black cursor-pointer transition duration-100 hover:bg-[#181919] active:bg-[#181919] text-white h-fit  w-fit pl-[8px]   pr-[20px] py-[10px] rounded-full flex flex-row items-center space-x-[10px]">
+                    <img src="svgs/notifications.svg" class="w-[25px]" alt="">
+                    <span class="navbarbuttontext font-[550] text-[14px]">Notifications</span>
+                </div>
+                <div
+                    class="bg-black cursor-pointer transition duration-100 hover:bg-[#181919] active:bg-[#181919] text-white h-fit  w-fit pl-[8px]   pr-[20px] py-[10px] rounded-full flex flex-row items-center space-x-[10px]">
+                    <img src="svgs/messages.svg" class="w-[25px]" alt="">
+                    <span class="navbarbuttontext font-[550] text-[14px]">Messages</span>
+                </div>
+                <div
+                    class="bg-black cursor-pointer transition duration-100 hover:bg-[#181919] active:bg-[#181919] text-white h-fit  w-fit pl-[8px]   pr-[20px] py-[10px] rounded-full flex flex-row items-center space-x-[10px]">
+                    <img src="svgs/grok.svg" class="w-[25px]" alt="">
+                    <span class="navbarbuttontext font-[550] text-[14px]">Grok</span>
+                </div>
+                <div
+                    class="bg-black cursor-pointer transition duration-100 hover:bg-[#181919] active:bg-[#181919] text-white h-fit  w-fit pl-[8px]   pr-[20px] py-[10px] rounded-full flex flex-row items-center space-x-[10px]">
+                    <img src="svgs/lists.svg" class="w-[25px]" alt="">
+                    <span class="navbarbuttontext font-[550] text-[14px]">Lists</span>
+                </div>
+                <div
+                    class="bg-black cursor-pointer transition duration-100 hover:bg-[#181919] active:bg-[#181919] text-white h-fit  w-fit pl-[8px]   pr-[20px] py-[10px] rounded-full flex flex-row items-center space-x-[10px]">
+                    <img src="svgs/bookmark.svg" class="w-[25px]" alt="">
+                    <span class="navbarbuttontext font-[550] text-[14px]">Bookmarks</span>
+                </div>
+                <div
+                    class="bg-black cursor-pointer transition duration-100 hover:bg-[#181919] active:bg-[#181919] text-white h-fit  w-fit pl-[8px]   pr-[20px] py-[10px] rounded-full flex flex-row items-center space-x-[10px]">
+                    <img src="svgs/communities.svg" class="w-[25px]" alt="">
+                    <span class="navbarbuttontext font-[550] text-[14px]">Communities</span>
+                </div>
+                <div
+                    class="bg-black cursor-pointer transition duration-100 hover:bg-[#181919] active:bg-[#181919] text-white h-fit  w-fit pl-[8px]   pr-[20px] py-[10px] rounded-full flex flex-row items-center space-x-[10px]">
+                    <img src="svgs/grok.svg" class="w-[25px]" alt="">
+                    <span class="navbarbuttontext font-[550] text-[14px]">Premium</span>
+                </div>
+                <div
+                    class="bg-black cursor-pointer transition duration-100 hover:bg-[#181919] active:bg-[#181919] text-white h-fit  w-fit pl-[8px]   pr-[20px] py-[10px] rounded-full flex flex-row items-center space-x-[10px]">
+                    <img src="svgs/profile.svg" class="w-[25px]" alt="">
+                    <span class="navbarbuttontext font-[550] text-[14px]">Profile</span>
+                </div>
+                <div
+                    class="bg-black cursor-pointer transition duration-100 hover:bg-[#181919] active:bg-[#181919] text-white h-fit  w-fit pl-[8px]   pr-[20px] py-[10px] rounded-full flex flex-row items-center space-x-[10px]">
+                    <img src="svgs/more.svg" class="w-[25px]" alt="">
+                    <span class="navbarbuttontext font-[550] text-[14px]">More</span>
+                </div>
+                <div
+                    class="npbc bg-black text-white min-h-[43px]   w-full max-w-full flex flex-row items-center justify-center space-x-[10px]">
+                    <div
+                        class="navbarpostbutton bg-[#1DA1F2] transition duration-100 hover:bg-[#1b93dd] active:bg-[#1b93dd] px-[70px] py-[7px] rounded-full font-[650]">
+                        <span class="nbpt">Post</span>
+                        <img class="nbpsvg" src="svgs/postpen.svg" alt="">
+                    </div>
+                </div>
+                <div
+                    class="profilebar bg-black transition duration-100 hover:bg-[#181919]  text-white h-[43px] w-[90%]  flex flex-row items-center space-x-[10px]  absolute bottom-[0px]  inset-x-0 mx-auto mb-[10px] rounded-full py-[25px] px-[5px]">
+                    <img src="whomtofollowprofilepics/profile.jpg" class="w-[30px] ml-[5px]  rounded-full" alt="">
+                    <div class="sopimage flex flex-row justify-between items-center w-full">
+                        <div class="flex flex-col items-start justify-center w-full">
+                            <div class="usernamepb text-[14px]">Rupesh Anand</div>
+                            <div class="hashtagpb text-gray-400 text-[12px]">@rps2k67865</div>
+                        </div>
+                        <img src="svgs/threedots.svg" class="w-[20px] mr-[5px]" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <div class="foryouandfollowing">
+                <div class="fy">
+                    For you
+                    <div class="bar"></div>
+                </div>
+                <div class="following">
+                    Following
+                </div>
+            </div>
+            <div class="wh">
+                <div class="ppandwh">
+                    <img class="whimage" src="whomtofollowprofilepics/profile.jpg" alt="">
+                    <span class="whtext">What's Happening?</span>
+                </div>
+                <div class="logos">
+                    <div class="logoss">
+                        <img src="svgs/image.svg" class="smallsvgs" alt="">
+                        <img src="svgs/gif.svg" class="smallsvgs" alt="">
+                        <img src="svgs/grok2.svg" class="smallsvgs" alt="">
+                        <img src="svgs/eventlist.svg" class="smallsvgs" alt="">
+                        <img src="svgs/alarm.svg" class="smallsvgs" alt="">
+                        <img src="svgs/location.svg" class="smallsvgs" alt="">
+                    </div>
+                    <div class="postbutton">Post</div>
+                </div>
+            </div>
+            <div class="post firstpost">
+                <div class="ppanduser">
+                    <img class="postprofilepic" src="whomtofollowprofilepics/profile.jpg" alt="">
+                    <div class="postdesc">
+                        <div class="postusername">
+                            <div class="pun">Rupesh
+                                <img src="svgs/bluetick.svg" alt="" class="bluetick">
+                            </div>
+
+                            <div class="phash">@rps2k67865 • 18h</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thepost">
+                    <div class="posttitle">
+                        Hi,
+                        This is a Twitter Clone built using HTML, CSS, and TailwindCSS. It is fully responsive, and you
+                        can find more details in the README file included in the GitHub repository.
+                    </div>
+                    <img src="" class="theactualpost" alt="">
+                </div>
+                <div class="buttons">
+                    <div class="action comment">
+                        <img src="svgs/comment.svg" alt="" class="actualcomment actualactionsvg">
+                        <span>829</span>
+                    </div>
+                    <div class="action repost">
+                        <img src="svgs/repost.svg" alt="" class="actualrepost actualactionsvg">
+                        <span>836</span>
+                    </div>
+                    <div class="action like">
+                        <img src="svgs/heart.svg" alt="" class="actuallike actualactionsvg">
+                        <span>5K</span>
+                    </div>
+                    <div class="action barchart">
+                        <img src="svgs/barchart.svg" alt="" class="actualbarchart actualactionsvg">
+                        <span>476K</span>
+                    </div>
+                    <div class="shareandbm">
+                        <div class="action bm">
+                            <img src="svgs/bm.svg" alt="" class="actualbm actualactionsvg">
+                        </div>
+                        <div class="action share">
+                            <img src="svgs/share.svg" alt="" class="actualshare actualactionsvg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="ppanduser">
+                    <img class="postprofilepic" src="postsprofilepics/postprofilepic1.jpg" alt="">
+                    <div class="postdesc">
+                        <div class="postusername">
+                            <div class="pun">DogeDesigner
+                                <img src="svgs/bluetick.svg" alt="" class="bluetick">
+                            </div>
+
+                            <div class="phash">@cb_doge • 6h</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thepost">
+                    <div class="posttitle">
+                        BREAKING: Elon Musk says Starlink is ready to serve India & is now waiting for final govt
+                        approval. He asked for public support & earlier said he'll do his best to serve the people of
+                        India with Starlink. Hope the ministry grants the final approval asap @JM_Scindia @narendramodi
+                    </div>
+                    <img src="posts/post1.jpeg" class="theactualpost" alt="">
+                </div>
+                <div class="buttons">
+                    <div class="action comment">
+                        <img src="svgs/comment.svg" alt="" class="actualcomment actualactionsvg">
+                        <span>829</span>
+                    </div>
+                    <div class="action repost">
+                        <img src="svgs/repost.svg" alt="" class="actualrepost actualactionsvg">
+                        <span>836</span>
+                    </div>
+                    <div class="action like">
+                        <img src="svgs/heart.svg" alt="" class="actuallike actualactionsvg">
+                        <span>5K</span>
+                    </div>
+                    <div class="action barchart">
+                        <img src="svgs/barchart.svg" alt="" class="actualbarchart actualactionsvg">
+                        <span>476K</span>
+                    </div>
+                    <div class="shareandbm">
+                        <div class="action bm">
+                            <img src="svgs/bm.svg" alt="" class="actualbm actualactionsvg">
+                        </div>
+                        <div class="action share">
+                            <img src="svgs/share.svg" alt="" class="actualshare actualactionsvg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="ppanduser">
+                    <img class="postprofilepic" src="postsprofilepics/postprofilepic2.jpeg" alt="">
+                    <div class="postdesc">
+                        <div class="postusername">
+                            <div class="pun">Shekhar Gupta
+                                <img src="svgs/bluetick.svg" alt="" class="bluetick">
+                            </div>
+
+                            <div class="phash">@rps2k67865 • 18h</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thepost">
+                    <div class="posttitle">
+                        91% of Indians report feeling safer because of street dogs, says new survey Sagrika Kissu
+                        @SagrikaKissu writes
+                    </div>
+                    <img src="posts/post2.jpeg" class="theactualpost" alt="">
+                </div>
+                <div class="buttons">
+                    <div class="action comment">
+                        <img src="svgs/comment.svg" alt="" class="actualcomment actualactionsvg">
+                        <span>1.4K</span>
+                    </div>
+                    <div class="action repost">
+                        <img src="svgs/repost.svg" alt="" class="actualrepost actualactionsvg">
+                        <span>928</span>
+                    </div>
+                    <div class="action like">
+                        <img src="svgs/heart.svg" alt="" class="actuallike actualactionsvg">
+                        <span>1K</span>
+                    </div>
+                    <div class="action barchart">
+                        <img src="svgs/barchart.svg" alt="" class="actualbarchart actualactionsvg">
+                        <span>791K</span>
+                    </div>
+                    <div class="shareandbm">
+                        <div class="action bm">
+                            <img src="svgs/bm.svg" alt="" class="actualbm actualactionsvg">
+                        </div>
+                        <div class="action share">
+                            <img src="svgs/share.svg" alt="" class="actualshare actualactionsvg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="ppanduser">
+                    <img class="postprofilepic" src="postsprofilepics/postprofilepic3.jpg" alt="">
+                    <div class="postdesc">
+                        <div class="postusername">
+                            <div class="pun">Discussing Films
+                                <img src="svgs/bluetick.svg" alt="" class="bluetick">
+                            </div>
+
+                            <div class="phash">@DiscussingFilms • 16h</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thepost">
+                    <div class="posttitle">
+                        Zoe Kravitz is not expected to return as Catwoman in ‘THE BATMAN: PART 2’
+                    </div>
+                    <img src="posts/post4.jpeg" class="theactualpost" alt="">
+                </div>
+                <div class="buttons">
+                    <div class="action comment">
+                        <img src="svgs/comment.svg" alt="" class="actualcomment actualactionsvg">
+                        <span>1.4K</span>
+                    </div>
+                    <div class="action repost">
+                        <img src="svgs/repost.svg" alt="" class="actualrepost actualactionsvg">
+                        <span>928</span>
+                    </div>
+                    <div class="action like">
+                        <img src="svgs/heart.svg" alt="" class="actuallike actualactionsvg">
+                        <span>1K</span>
+                    </div>
+                    <div class="action barchart">
+                        <img src="svgs/barchart.svg" alt="" class="actualbarchart actualactionsvg">
+                        <span>791K</span>
+                    </div>
+                    <div class="shareandbm">
+                        <div class="action bm">
+                            <img src="svgs/bm.svg" alt="" class="actualbm actualactionsvg">
+                        </div>
+                        <div class="action share">
+                            <img src="svgs/share.svg" alt="" class="actualshare actualactionsvg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="post lastpost">
+                <div class="ppanduser">
+                    <img class="postprofilepic" src="postsprofilepics/postprofilepic3.jpg" alt="">
+                    <div class="postdesc">
+                        <div class="postusername">
+                            <div class="pun">Discussing Films
+                                <img src="svgs/bluetick.svg" alt="" class="bluetick">
+                            </div>
+                            <div class="phash">@DiscussingFilms • 14h</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thepost">
+                    <div class="posttitle">
+                        Robert Downey Jr says that Gwyneth Paltrow once asked him who Tom Holland was, despite starring
+                        alongside him several times. “I responded, ‘That’s Spider-Man. He said his name was Peter. His
+                        character's name is Peter. He's Tom Holland. You've done 4 movies with him.’”
+                    </div>
+                    <img src="posts/post3.png" class="theactualpost" alt="">
+                </div>
+                <div class="buttons">
+                    <div class="action comment">
+                        <img src="svgs/comment.svg" alt="" class="actualcomment actualactionsvg">
+                        <span>829</span>
+                    </div>
+                    <div class="action repost">
+                        <img src="svgs/repost.svg" alt="" class="actualrepost actualactionsvg">
+                        <span>836</span>
+                    </div>
+                    <div class="action like">
+                        <img src="svgs/heart.svg" alt="" class="actuallike actualactionsvg">
+                        <span>5K</span>
+                    </div>
+                    <div class="action barchart">
+                        <img src="svgs/barchart.svg" alt="" class="actualbarchart actualactionsvg">
+                        <span>476K</span>
+                    </div>
+                    <div class="shareandbm">
+                        <div class="action bm">
+                            <img src="svgs/bm.svg" alt="" class="actualbm actualactionsvg">
+                        </div>
+                        <div class="action share">
+                            <img src="svgs/share.svg" alt="" class="actualshare actualactionsvg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" third mt-[5px] w-full bg-black text-white h-[100vh] sticky top-[5px] overflow-auto">
+            <div class="mt-[0px] sticky top-[0px] bg-black">
+                <div
+                    class="focus-within:border-[#1DA1F2] mt-[0px] ml-[25px] px-[10px] py-[8px] bg-black searchbox flex flex-row gap-[5px] w-[65%] rounded-full border-[#2F3336] border-[2px] text-[#85898e]  ">
+                    <img src="svgs/exploresearchbox.svg" alt="">
+                    <input type="text" placeholder="Search" class="outline-none">
+                </div>
+            </div>
+            <div
+                class="mt-[15px] ml-[25px] px-[15px] py-[10px] bg-black searchbox flex flex-col gap-[10px] w-[65%] rounded-[10px] border-[#2F3336] border-[2px] flex flex-col ">
+                <div class="font-[750] text-[18px]">
+                    Subscribe to Premium
+                </div>
+                <div class="text-[14px]">
+                    Subscribe to unlock new feautures and if eligible, receive a share of revenue
+                </div>
+                <div
+                    class="bg-black text-white min-h-[43px]   w-full max-w-full flex flex-row items-center justify-start space-x-[10px]">
+                    <div
+                        class="bg-[#1DA1F2] transition duration-100 hover:bg-[#1b93dd] active:bg-[#1b93dd] px-[15px] text-[14px] py-[7px] rounded-full font-[650]">
+                        Subscribe</div>
+                </div>
+            </div>
+            <div
+                class="mt-[15px] ml-[25px] px-[15px] py-[10px] bg-black searchbox flex flex-col gap-[10px] w-[65%] rounded-[10px] border-[#2F3336] border-[2px] flex flex-col ">
+                <div class="font-[750] text-[18px]">
+                    Today's News
+                </div>
+                <div>
+                    <div class="text-[14px] font-[600]">
+                        South Africa Chase Down 359 to Level ODI Series Against India
+                    </div>
+                    <div class="text-[12px] text-[#71767B]">
+                        1 day ago · Sports · 153K posts
+                    </div>
+                </div>
+                <div class="mt-[15px]">
+                    <div class="text-[14px] font-[600]">
+                        Akhanda 2 Premieres Sell Out Amid Balakrishna Hype
+                    </div>
+                    <div class="text-[12px] text-[#71767B]">
+                        12 hours ago · Entertainment · 11.2K posts
+                    </div>
+                </div>
+                <div class="mt-[15px]">
+                    <div class="text-[14px] font-[600]">
+                        India Celebrates Navy Day with BeachSide Show of Strength in Kerala
+                    </div>
+                    <div class="text-[12px] text-[#71767B]">
+                        22 hours ago · Entertainment · 24.6K posts
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="mt-[15px] ml-[25px] px-[15px] py-[10px] bg-black searchbox flex flex-col gap-[10px] w-[65%] rounded-[10px] border-[#2F3336] border-[2px] flex flex-col ">
+                <div class="font-[750] text-[18px]">
+                    What's Happening
+                </div>
+                <div>
+                    <div class="text-[12px] text-[#71767B]">
+                        <span>Trending in India</span>
+                    </div>
+                    <div class="text-[14px] font-[600]">
+                        Indigo
+                    </div>
+                    <div class="text-[12px] text-[#71767B]">
+                        265K posts
+                    </div>
+                </div>
+                <div>
+                    <div class="text-[12px] text-[#71767B]">
+                        <span>Cricket · Trending</span>
+                    </div>
+                    <div class="text-[14px] font-[600]">
+                        Joe Root
+                    </div>
+                    <div class="text-[12px] text-[#71767B]">
+                        4159 posts
+                    </div>
+                </div>
+                <div>
+                    <div class="text-[12px] text-[#71767B]">
+                        <span>Trending in India</span>
+                    </div>
+                    <div class="text-[14px] font-[600]">
+                        Jacks
+                    </div>
+                    <div class="text-[12px] text-[#71767B]">
+                        3168 posts
+                    </div>
+                </div>
+                <div>
+                    <div class="text-[12px] text-[#71767B]">
+                        <span>Sports · Trending</span>
+                    </div>
+                    <div class="text-[14px] font-[600]">
+                        #AUSvENG
+                    </div>
+                    <div class="text-[12px] text-[#71767B]">
+                        3269 posts
+                    </div>
+                </div>
+                <div class="text-[#1DA1F2] text-[14px]">
+                    Show more
+                </div>
+            </div>
+            <div
+                class="mt-[15px] ml-[25px] px-[15px] py-[10px] bg-black searchbox flex flex-col gap-[10px] w-[65%] rounded-[10px] border-[#2F3336] border-[2px] flex flex-col ">
+                <div class="font-[750] text-[18px]">
+                    Who to follow
+                </div>
+                <div class="flex flex-row gap-[10px] items-center mb-[10px]">
+                    <div class="profilepic">
+                        <img src="whomtofollowprofilepics/profile.jpg" class="rounded-full w-[35px]" alt="">
+                    </div>
+                    <div class="nameandfollow justify-between w-full flex">
+                        <div class="name flex flex-col items-start justify-center">
+                            <div class="font-[550] text-[14px] hover:underline active:underline cursor-pointer">Rupesh
+                                Anand</div>
+                            <div class="#71767B text-[12px]">@rps2k67865</div>
+                        </div>
+                        <div
+                            class="follow text-[14px] px-[20px] py-[5px] h-fit bg-white rounded-full text-black font-[600] flex items-center justify-center hover:bg-[#E7E9EA] active:bg-[#E7E9EA] cursor-pointer">
+                            Follow</div>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-[10px] items-center mb-[10px]">
+                    <div class="profilepic">
+                        <img src="whomtofollowprofilepics/viratkohli.jpg" class="rounded-full w-[35px]" alt="">
+                    </div>
+                    <div class="nameandfollow justify-between w-full flex">
+                        <div class="name flex flex-col items-start justify-center">
+                            <div class="font-[550] text-[14px] hover:underline active:underline cursor-pointer">Virat
+                                Kohli</div>
+                            <div class="#71767B text-[12px]">@viratkohli</div>
+                        </div>
+                        <div
+                            class="follow text-[14px] px-[20px] py-[5px] h-fit bg-white rounded-full text-black font-[600] flex items-center justify-center hover:bg-[#E7E9EA] active:bg-[#E7E9EA] cursor-pointer">
+                            Follow</div>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-[10px] items-center mb-[10px]">
+                    <div class="profilepic">
+                        <img src="whomtofollowprofilepics/jeffbezos.jpg" class="rounded-full w-[35px]" alt="">
+                    </div>
+                    <div class="nameandfollow justify-between w-full flex">
+                        <div class="name flex flex-col items-start justify-center">
+                            <div class="font-[550] text-[14px] hover:underline active:underline cursor-pointer">Jeff
+                                Bezos </div>
+                            <div class="#71767B text-[12px]">@JeffBezos</div>
+                        </div>
+                        <div
+                            class="follow text-[14px] px-[20px] py-[5px] h-fit bg-white rounded-full text-black font-[600] flex items-center justify-center hover:bg-[#E7E9EA] active:bg-[#E7E9EA] cursor-pointer">
+                            Follow</div>
+                    </div>
+                </div>
+                <div class="text-[#1DA1F2] text-[14px]">
+                    Show more
+                </div>
+            </div>
+            <div class="mt-[15px] ml-[25px] px-[15px] py-[10px] text-[#71767B] text-[12px] flex flex-wrap w-[65%] ">
+                <div>
+                    Terms of Service |
+                </div>
+                <div>
+                    &nbsp;&nbsp;Privacy Policy |
+                </div>
+                <div>
+                    &nbsp;&nbsp;Cookie Policy |
+                </div>
+                <div>
+                    &nbsp;&nbsp;Accessibility |
+                </div>
+                <div>
+                    &nbsp;&nbsp;Ads Info |
+                </div>
+                <div>
+                    &nbsp;&nbsp;More... |
+                </div>
+                <div>
+                    &nbsp &nbsp;© 2025 X Corp. |
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
